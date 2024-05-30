@@ -9,7 +9,7 @@ const exchangeRateEl = document.getElementById("exchange-rate");
 // const sample = require("./currency-api.json");
 // console.log(sample)
 function updateRate(){
-    fetch(`https://v6.exchangerate-api.com/v6/d4a67d1130d37303353a2f5a/latest/${currencyFirstEl.value}`)
+    fetch(`https://v6.exchangerate-api.com/v6/d4a67d1130d37303353a2f5a/latest/${currencyFirstEl.value}`)//Here generate your own key from 'exchangerate-api.com'
     .then((res)=>res.json())
     .then((data)=>{
         const rate = data.conversion_rates[currencySecondEl.value];
