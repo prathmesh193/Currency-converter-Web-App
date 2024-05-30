@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(225, 200, 247);
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    padding:0;
+    background-image: url("paisa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+ @media(max-width:600px) {
+    body {
+        background-color: red;
+        background-image: url("paisa.jpg");
+        background-size: auto;
+    }
+    nav{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    nav ul li{
+        margin: 0 3px;
+    }
+    /* .container{
+        
+    } */
+
+}
+nav {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: #90EE90;
+    color:black;
+    padding: 5px;
+    position: fixed;
+    top:10px;
+    overflow: hidden;
+    padding-left: 100%;
+    padding-right: 100%;
+}
+
+.logo{
+    /* margin:0; */
+    /* padding-left:100px; */
+    display: flex;
+    
+}
+nav li a {
+    text-decoration: none;
+    color:black;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: rgb(241, 50, 216);
+}
+.nav-bar{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-left: 500px;
+    color:pink
+}
+nav li{
+    color:black;
+}
+
+.aboutMe{
+    display: block;
+}
+
+#curTell,#worth-first,#worth-second,#exchange-rate{
+    color:black;
+}
+
+#navO{
+    color:black;
+    
+}
+
+.container{
+    /* background-color: darkcyan; */
+    color: aliceblue;;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    backdrop-filter:blur(50px);
+    box-shadow: 10PX 10px 20px black;
+}
+
+.currency-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.currency-container select{
+    padding: 10px;
+}
+.currency-container input{
+    border:10;
+    border-color: #343638;
+    background: transparent;
+    font-size: 25px;
+    text-align: right;
+    color: aliceblue;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.exchange-rate{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+select:focus,
+input:focus{
+    outline: 0;
+}
+footer {
+
+    text-align: center;
+    position:fixed;
+    bottom: 10px;
+}
+
+#grad{
+    /* background-image: linear-gradient(45deg,#14f5ff 6%,#32a525 79%); */
+    background-image: linear-gradient(45deg,#0091FF,#FFFF00);
+    /* background-image: linear-gradient(45deg,#0091ff,#80ff00); */
+    opacity : 85%;
+}

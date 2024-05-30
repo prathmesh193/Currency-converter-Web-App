@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="grad">
+        <div class="logo">MYCurrencyConverter
+        <ul class="nav-bar">
+            <!-- <li id="navO"><a id="navO" href="/">Home</a></li>
+            <li id="navO"><a id="navO" href="/about">AboutUs</a></li>
+            <li id="navO"><a id="navO" href="mailto: prathmeshb193@gmail.com">Contact</a></li> -->
+            
+            <li><a href="*">Home</a></li>
+            <li><a href="about.html">AboutUs</a></li>
+            <li><a href="mailto: prathmeshb193@gmail.com">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 id="curTell">Currency-Converter</h1>
+        <div class="currency-container">
+            <select id="currency-first">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="USD" selected>USD</option>
+            </select>
+            <input type="number" id="worth-first" value="1" min="0">
+        </div>
+        <div class="currency-container">
+            <select id="currency-second">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR" selected>INR</option>
+                <option value="JPY">JPY</option>
+                <option value="USD">USD</option>
+            </select>
+            <input type="number" id="worth-second" disabled>
+        </div>
+        <p class="exchange-rate" id="exchange-rate">1 USD = 83.379 ISD</p>
+    </div>
+    <script src="main.js"></script>
+    <footer>
+        Copyright &copy:All rights reserverd to Prathmesh.
+    </footer>
+</body>
+</html>
